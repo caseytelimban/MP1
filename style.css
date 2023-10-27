@@ -1,0 +1,29 @@
+body {
+    background-color: white;
+    font-family: tahoma;
+}
+
+.nav {
+    color: #f0ebce;
+    background-color: #395144;
+    padding: 10px;
+}
+
+h3 {
+    padding-left: 30px;
+    
+}
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 1024px) {
+    [class*="col-"] {
+        width: 100%;
+    }
+}
