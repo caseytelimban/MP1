@@ -1,48 +1,134 @@
 body {
     background-color: white;
-    font-family: tahoma;
+    font-family: arial;
 }
 
-.nav {
-    color: #f0ebce;
-    background-color: #395144;
+* {
+    box-sizing: border-box;
+}
+#navtop {
+    background-color: rgb(0, 66, 0);
+    position: sticky;
+}
+
+#titlelogo {
+    margin: 20px;
+    color: whitesmoke;
+    font-size: 25px;
+    text-decoration: none;
+}
+
+.navright {
+    background-color: rgb(113, 172, 113);
     padding: 10px;
+    float: right;
+    width: 25%;
+}
+
+.col-2 a {
+    text-decoration: none;
+    color: whitesmoke;
+    padding: 15px;
+}
+
+a:hover {
+    color: rgb(203, 255, 203);
+    font-size: 16.5px;
+}
+
+.col-2 a.active {
+    background-color: green;
+}
+
+input[type=search], select {
+    width: 50%;
+    padding: 5px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 40px;
+    box-sizing: border-box;
+  }
+
+#searchbtn {
+    border-radius: 20px;
+    margin-right: 25px;
+    padding: 4px 10px;
+}
+
+#myVideobg {
     position: fixed;
+    width: 100%;
+    height: auto;
 }
 
-h3 {
-    padding-left: 30px;
-    
-}
-
-.home {
-    background-image: url('bgcontent.jpg');
-    height: 629px;
-    width: auto;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-#quotes1 {
-    font-size: 60px;
-    font-family: Verdana;
-    padding: 50px;
-    color: rgb(10, 77, 10);
-    font-weight: bold;
+.content {
+  position: fixed;
+  bottom: 0;
+  background: rgba(52, 77, 64, 0.637);
+  color: whitesmoke;
+  width: 100%;
+  padding: 20px;
 }
 
 
 
+.col-1 {width: 25%;}
+.col-2 {width: 75%;}
+.col-3 {width: 100%;}
+
+@media screen and (max-width: 1024px) {
+    .col-1 {width: 30%;}
+    .col-2 {width: 70%;}
+}
+
+@media screen and (max-width: 768px) {
+    .col-1 {width: 100%;}
+    .col-2 {width: 100%;}
 
 
-@media only screen and (max-width: 1024px) {
-    [class*="col-"] {
-        width: 100%;
+
+}
+
+@media screen and (max-width: 500px) {
+    .col-1 {width: 100%;}
+    .col-2 {width: 100%;}
+
+    #titlelogo {
+        text-align: center;
+        display: block;
     }
-}
 
-@media only screen and (max-width: 320px) {
-    [class*="col-"] {
+    .col-2 a {
+        float: left;
+        font-size: small;
+        padding: 12px;
+    }
+
+    input[type=search], select {
         width: 50%;
+        padding: 1px 15px;
+        margin: 8px 10px;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 40px;
+        box-sizing: border-box;
+        font-size: small;
+      }
+
+      #searchbtn {
+        border-radius: 20px;
+        margin-right: 20px;
+        padding: 4px 10px;
     }
+
+    .content {
+        height: auto;
+        width: 85%;
+        margin: 25px;
+        bottom: auto;
+        font-size: x-small;
+    }
+
+
 }
