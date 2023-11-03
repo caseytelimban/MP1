@@ -6,9 +6,17 @@ body {
 * {
     box-sizing: border-box;
 }
-#navtop {
+.nav {
     background-color: rgb(0, 66, 0);
-    position: sticky;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    color: whitesmoke;
+    padding: 8px;
+}
+
+#navlogo {
+    padding-top: 7px;
 }
 
 #titlelogo {
@@ -22,7 +30,6 @@ body {
     background-color: rgb(113, 172, 113);
     padding: 10px;
     float: right;
-    width: 25%;
 }
 
 .col-2 a {
@@ -57,25 +64,22 @@ input[type=search], select {
 }
 
 #myVideobg {
-    position: fixed;
-    width: 100%;
+    width: auto;
     height: auto;
 }
 
 .content {
-  position: fixed;
-  bottom: 0;
-  background: rgba(52, 77, 64, 0.637);
-  color: whitesmoke;
-  width: 100%;
-  padding: 20px;
+    bottom: 0;
+    background: rgba(52, 77, 64, 0.637);
+    color: whitesmoke;
+    padding: 20px;
 }
-
 
 
 .col-1 {width: 25%;}
 .col-2 {width: 75%;}
 .col-3 {width: 100%;}
+
 
 @media screen and (max-width: 1024px) {
     .col-1 {width: 30%;}
